@@ -34,7 +34,7 @@ RenderSettings:
   m_DefaultReflectionMode: 0
   m_DefaultReflectionResolution: 128
   m_ReflectionBounces: 1
-  m_ReflectionIntensity: 0.32
+  m_ReflectionIntensity: 0.357
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 492855237}
   m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
@@ -54,7 +54,7 @@ LightmapSettings:
     m_EnableRealtimeLightmaps: 1
   m_LightmapEditorSettings:
     serializedVersion: 4
-    m_Resolution: 3
+    m_Resolution: 5
     m_BakeResolution: 40
     m_TextureWidth: 1024
     m_TextureHeight: 1024
@@ -1107,7 +1107,7 @@ Light:
   serializedVersion: 7
   m_Type: 1
   m_Color: {r: 0.47794116, g: 0.47794116, b: 0.47794116, a: 1}
-  m_Intensity: 0.49
+  m_Intensity: 0.43
   m_Range: 10
   m_SpotAngle: 30
   m_CookieSize: 10
@@ -1697,7 +1697,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 2e8666a0748f64c90868b70c0e44eb53, type: 2}
+  - {fileID: 2100000, guid: c094ac013571e451b8baf3f9f0901dad, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
@@ -2578,7 +2578,7 @@ Light:
   m_Type: 2
   m_Color: {r: 0.6691177, g: 0.6691177, b: 0.6691177, a: 1}
   m_Intensity: 0.81
-  m_Range: 10
+  m_Range: 5.261204
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
@@ -3394,8 +3394,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1267167911}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 51.85, y: -7.86, z: 1.2097657}
-  m_LocalScale: {x: 5.746755, y: 12.461148, z: 1}
+  m_LocalPosition: {x: 51.93, y: -7.93, z: 1.2097657}
+  m_LocalScale: {x: 5.9042983, y: 12.592431, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 834622602}
