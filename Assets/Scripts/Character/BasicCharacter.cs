@@ -15,7 +15,7 @@ public class BasicCharecter : MonoBehaviour {
 	}
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetKeyDown (KeyCode.Space) && grounded == false) {
+		if (Input.GetKeyDown (KeyCode.Space) && grounded == true) {
 			GetComponent<Rigidbody2D> ().velocity = new Vector2 (GetComponent<Rigidbody2D>().velocity.x, jumpHeight);
 		}
 		if (Input.GetKey (KeyCode.D)) {
