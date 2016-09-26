@@ -25,4 +25,8 @@ public class BasicCharecter : MonoBehaviour {
 			GetComponent<Rigidbody2D> ().velocity = new Vector2 (-moveSpeed, GetComponent<Rigidbody2D>().velocity.y);
 		}
 	}
+
+	void test() {
+
+	}
 }
