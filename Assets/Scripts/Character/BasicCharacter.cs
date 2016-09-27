@@ -7,7 +7,7 @@ public class BasicCharacter : MonoBehaviour {
 	public float groundCheckRadius;
 	public LayerMask whatIsGround;
 	private bool grounded;
-	// Use this for initialisation
+	// Use this for initialization
 	void Start () {
 	}
 	void fixedUpdate() {
@@ -15,15 +15,9 @@ public class BasicCharacter : MonoBehaviour {
 	}
 	// Update is called once per frame
 	void Update () {
-<<<<<<< HEAD
 			if (Input.GetKeyDown (KeyCode.Space)) {
 				GetComponent<Rigidbody2D> ().velocity = new Vector2 (GetComponent<Rigidbody2D> ().velocity.x, jumpHeight);
 			}
-=======
-		if (Input.GetKeyDown (KeyCode.Space) && grounded == true) {
-			GetComponent<Rigidbody2D> ().velocity = new Vector2 (GetComponent<Rigidbody2D>().velocity.x, jumpHeight);
-		}
->>>>>>> origin/master
 		if (Input.GetKey (KeyCode.D)) {
 			GetComponent<Rigidbody2D> ().velocity = new Vector2 (moveSpeed, GetComponent<Rigidbody2D>().velocity.y);
 		}
