@@ -25,11 +25,11 @@ public class BasicCharacter : MonoBehaviour {
 	void Update () {
 		Rigidbody2D characterRigidBody = GetComponent<Rigidbody2D>();
 		if (Input.GetKeyDown (KeyCode.Space) && jumpCount < maxJumps) {
-			characterRigidBody.velocity = new Vector2 (characterRigidBody.velocity.x, jumpHeight);
+			characterRigidBody.AddForce(new Vector2D(characterRigidBody.velocity.x, jumpHeight));
 			jumpCount += 1;
 		}
 		if (Input.GetKey (KeyCode.D)) {
-			characterRigidBody.velocity = new Vector2 (moveSpeed, characterRigidBody.velocity.y);
+			characterRigidBody.AddForce(new Vector2D(moveSpeed, characterRigidBody.velocity.y));
 		}
 		if (Input.GetKey (KeyCode.A)) {
 			characterRigidBody.velocity = new Vector2 (-moveSpeed, characterRigidBody.velocity.y);
