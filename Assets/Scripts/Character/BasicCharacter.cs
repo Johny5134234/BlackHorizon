@@ -7,7 +7,8 @@ public class BasicCharacter : MonoBehaviour {
 	public float groundCheckRadius;
 	public LayerMask groundLayer;
 
-	bool isGrounded;
+	float jumpCount;
+	float maxJumps = 2;
 
 	// Use this for initialization
 	void Start () {
@@ -17,12 +18,16 @@ public class BasicCharacter : MonoBehaviour {
 
 	}
 
+	void OnCollisionEnter(Collision collision) {
+		if(collision.gameObject.tag == "GROUND") {
+			jumpCount = 0;
+		}	
+	}
+
 	// Update is called once per frame
 	void Update () {
-		isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
-		Debug.Log("Grounded : " + isGrounded);
 		Rigidbody2D characterRigidBody = GetComponent<Rigidbody2D>();
-		if (Input.GetKeyDown (KeyCode.Space) && isGrounded) {
+		if (Input.GetKeyDown (KeyCode.Space) && jumpCount <= maxJumps) {
 			characterRigidBody.velocity = new Vector2 (characterRigidBody.velocity.x, jumpHeight);
 		}
 		if (Input.GetKey (KeyCode.D)) {
