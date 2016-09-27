@@ -12,7 +12,7 @@ public class BasicCharacter : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		distToGround = collider.bounds.extents.y;
+		distToGround = GetComponent<BoxCollider2D>().bounds.extents.y;
 		characterRigidBody = GetComponent<Rigidbody2D>();
 	}
 
