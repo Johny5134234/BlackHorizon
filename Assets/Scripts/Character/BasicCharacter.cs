@@ -12,8 +12,7 @@ public class BasicCharacter : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		distToGround = GetComponent<Collider>().bounds.extents.y;
-		characterRigidBody = GetComponent<Rigidbody2D>();
+		distToGround = GetComponent<BoxCollider2D>().bounds.extents.y;
 	}
 
 	bool isGrounded() {
@@ -25,6 +24,7 @@ public class BasicCharacter : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
+		Rigidbody2D characterRigidBody = GetComponent<Rigidbody2D>();
 		if (Input.GetKeyDown (KeyCode.Space) && isGrounded()) {
 			characterRigidBody.velocity = new Vector2 (characterRigidBody.velocity.x, jumpHeight);
 		}
