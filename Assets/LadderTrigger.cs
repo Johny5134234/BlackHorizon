@@ -3,7 +3,7 @@ using System.Collections;
 
 public class LadderTrigger : MonoBehaviour {
 
-	public float ladderMoveSpeed = 0.15;
+	public float ladderMoveSpeed = 0.15f;
 
 	// Use this for initialization
 	void Start () {
