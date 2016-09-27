@@ -18,7 +18,7 @@ public class BasicCharacter : MonoBehaviour {
 
 	}
 
-	void OnCollisionEnter(Collision collision) {
+	void OnCollisionEnter2D(Collision collision) {
 		if(collision.gameObject.tag == "GROUND") {
 			jumpCount = 0;
 		}	
