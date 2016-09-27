@@ -35,8 +35,4 @@ public class BasicCharacter : MonoBehaviour {
 			characterRigidBody.velocity = new Vector2 (-moveSpeed, characterRigidBody.velocity.y);
 		}
 	}
-
-	void test() {
-
-	}
 }
