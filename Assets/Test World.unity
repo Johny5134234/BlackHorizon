@@ -579,11 +579,11 @@ GameObject:
   m_Component:
   - 4: {fileID: 503336214}
   - 33: {fileID: 503336213}
-  - 135: {fileID: 503336212}
   - 23: {fileID: 503336211}
+  - 58: {fileID: 503336212}
   m_Layer: 0
   m_Name: Sphere (2)
-  m_TagString: Untagged
+  m_TagString: GROUND
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -617,18 +617,20 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
---- !u!135 &503336212
-SphereCollider:
+--- !u!58 &503336212
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 503336210}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!33 &503336213
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -939,11 +941,11 @@ GameObject:
   m_Component:
   - 4: {fileID: 1243437192}
   - 33: {fileID: 1243437191}
-  - 135: {fileID: 1243437190}
   - 23: {fileID: 1243437189}
+  - 58: {fileID: 1243437190}
   m_Layer: 0
   m_Name: Sphere (1)
-  m_TagString: Untagged
+  m_TagString: GROUND
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -977,18 +979,20 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
---- !u!135 &1243437190
-SphereCollider:
+--- !u!58 &1243437190
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1243437188}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!33 &1243437191
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -1018,11 +1022,11 @@ GameObject:
   m_Component:
   - 4: {fileID: 1351305954}
   - 33: {fileID: 1351305953}
-  - 135: {fileID: 1351305952}
   - 23: {fileID: 1351305951}
+  - 58: {fileID: 1351305952}
   m_Layer: 0
   m_Name: Sphere
-  m_TagString: Untagged
+  m_TagString: GROUND
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1056,18 +1060,20 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
---- !u!135 &1351305952
-SphereCollider:
+--- !u!58 &1351305952
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1351305950}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!33 &1351305953
 MeshFilter:
   m_ObjectHideFlags: 0
