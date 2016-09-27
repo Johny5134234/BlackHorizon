@@ -17,7 +17,7 @@ public class BasicCharacter : MonoBehaviour {
 	}
 
 	bool isGrounded() {
-		return Physics.Raycast(transform.position, -Vector3.up, distToGround + 0.1);
+		return Physics.Raycast(transform.position, -Vector3.up, distToGround + 0.1f);
 	}
 
 	void fixedUpdate() {
