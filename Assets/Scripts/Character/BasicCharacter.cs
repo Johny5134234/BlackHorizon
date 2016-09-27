@@ -20,7 +20,6 @@ public class BasicCharacter : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
-		Debug.Log("Grounded : " + isGrounded);
 		Rigidbody2D characterRigidBody = GetComponent<Rigidbody2D>();
 		if (Input.GetKeyDown (KeyCode.Space) && isGrounded) {
 			characterRigidBody.velocity = new Vector2 (characterRigidBody.velocity.x, jumpHeight);
