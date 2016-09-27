@@ -716,7 +716,7 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 0
-  maxJumps: 2
+  maxJumps: 1
 --- !u!50 &1113633861
 Rigidbody2D:
   serializedVersion: 2
