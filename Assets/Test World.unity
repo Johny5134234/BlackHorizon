@@ -2029,6 +2029,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1132923401}
+  - 61: {fileID: 1132923402}
   m_Layer: 0
   m_Name: Ladder
   m_TagString: LADDER
@@ -2064,6 +2065,20 @@ Transform:
   - {fileID: 1576518458}
   m_Father: {fileID: 1242110138}
   m_RootOrder: 7
+--- !u!61 &1132923402
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1132923400}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0.3654976, y: -0.29470158}
+  serializedVersion: 2
+  m_Size: {x: 1.2243497, y: 6.561819}
 --- !u!1 &1242110137
 GameObject:
   m_ObjectHideFlags: 0
