@@ -21,9 +21,9 @@ public class BasicCharacter : MonoBehaviour {
 
 	void OnCollisionEnter2D(Collision2D collision) {
 		onLadder = false;
-		if(collision.gameObject.tag == "GROUND") {
+		if(collision.CompareTag("GROUND")) {
 			jumpCount = 0;
-		} else if(collision.gameObject.tag == "LADDER") {
+		} else if(collision.CompareTag("LADDER")) {
 			jumpCount = maxJumps;
 			onLadder = true;
 		}	
