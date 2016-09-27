@@ -104,7 +104,7 @@ GameObject:
   - 61: {fileID: 188396130}
   m_Layer: 0
   m_Name: Cube (6)
-  m_TagString: Collision
+  m_TagString: GROUND
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -466,7 +466,7 @@ GameObject:
   - 61: {fileID: 498856699}
   m_Layer: 0
   m_Name: Cube (3)
-  m_TagString: Collision
+  m_TagString: GROUND
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -547,7 +547,7 @@ GameObject:
   - 61: {fileID: 662348009}
   m_Layer: 0
   m_Name: Cube (1)
-  m_TagString: Collision
+  m_TagString: GROUND
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -716,6 +716,7 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 0
+  maxJumps: 2
 --- !u!50 &1113633861
 Rigidbody2D:
   serializedVersion: 2
@@ -809,7 +810,7 @@ GameObject:
   - 61: {fileID: 1533673766}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Collision
+  m_TagString: GROUND
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -952,7 +953,7 @@ GameObject:
   - 61: {fileID: 1627374105}
   m_Layer: 0
   m_Name: Cube (2)
-  m_TagString: Collision
+  m_TagString: GROUND
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -1033,7 +1034,7 @@ GameObject:
   - 61: {fileID: 1656743588}
   m_Layer: 0
   m_Name: Cube (8)
-  m_TagString: Collision
+  m_TagString: GROUND
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1114,7 +1115,7 @@ GameObject:
   - 61: {fileID: 1671645414}
   m_Layer: 0
   m_Name: Cube (7)
-  m_TagString: Collision
+  m_TagString: GROUND
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
