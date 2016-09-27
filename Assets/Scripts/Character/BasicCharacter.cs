@@ -8,10 +8,12 @@ public class BasicCharacter : MonoBehaviour {
 	public LayerMask whatIsGround;
 
 	private float distToGround;
+	private Rigidbody2D characterRigidBody;
 
 	// Use this for initialization
 	void Start () {
 		distToGround = collider.bounds.extents.y;
+		characterRigidBody = GetComponent<Rigidbody2D>();
 	}
 
 	bool isGrounded() {
