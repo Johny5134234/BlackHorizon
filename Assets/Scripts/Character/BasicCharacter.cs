@@ -7,8 +7,8 @@ public class BasicCharacter : MonoBehaviour {
 	public float groundCheckRadius;
 	public LayerMask groundLayer;
 
-	float jumpCount;
-	float maxJumps = 2;
+	float jumpCount = 0;
+	public float maxJumps = 2;
 
 	// Use this for initialization
 	void Start () {
