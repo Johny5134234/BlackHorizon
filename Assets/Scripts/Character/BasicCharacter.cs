@@ -23,7 +23,7 @@ public class BasicCharacter : MonoBehaviour {
 		onLadder = false;
 		if(collision.gameObject.tag == "GROUND") {
 			jumpCount = 0;
-		} else if(collision.gameObject.tag = "LADDER") {
+		} else if(collision.gameObject.tag == "LADDER") {
 			jumpCount = maxJumps;
 			onLadder = true;
 		}	
