@@ -9,6 +9,7 @@ public class BasicCharacter : MonoBehaviour {
 
 	float jumpCount = 0;
 	public float maxJumps = 2;
+	bool onLadder = false;
 
 	// Use this for initialization
 	void Start () {
@@ -19,8 +20,12 @@ public class BasicCharacter : MonoBehaviour {
 	}
 
 	void OnCollisionEnter2D(Collision2D collision) {
+		onLadder = false;
 		if(collision.gameObject.tag == "GROUND") {
 			jumpCount = 0;
+		} else if(collision.gameObject.tag = "LADDER") {
+			jumpCount = maxJumps;
+			onLadder = true;
 		}	
 	}
 
@@ -36,6 +41,9 @@ public class BasicCharacter : MonoBehaviour {
 		}
 		if (Input.GetKey (KeyCode.A)) {
 			characterRigidBody.velocity = new Vector2 (-moveSpeed, characterRigidBody.velocity.y);
+		}
+		if (Input.GetKey(KeyCode.W)) {
+			characterRigidBody.velocity = new Vector2(characterRigidBody.velocity.x, moveSpeed);
 		}
 	}
 }
