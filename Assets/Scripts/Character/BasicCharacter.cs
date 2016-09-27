@@ -12,7 +12,7 @@ public class BasicCharacter : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		distToGround = GetComponent<BoxCollider2D>().bounds.extents.y;
+		distToGround = gameObject.GetComponent<BoxCollider2D>().bounds.extents.y;
 	}
 
 	bool isGrounded() {
