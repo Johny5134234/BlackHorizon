@@ -8,7 +8,7 @@ public class BasicCharacter : MonoBehaviour {
 	public LayerMask groundLayer;
 	public float bulletSpeed;
 
-    int ammo = maxAmmo;
+    int ammo = 0;
     public int maxAmmo = 50;
 
 	float jumpCount = 0;
@@ -21,6 +21,7 @@ public class BasicCharacter : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+        ammo = maxAmmo;
 	}
 
 	void FixedUpdate() {
