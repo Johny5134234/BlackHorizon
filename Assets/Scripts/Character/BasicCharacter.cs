@@ -18,7 +18,7 @@ public class BasicCharacter : MonoBehaviour {
 	void Start () {
 	}
 
-	void fixedUpdate() {
+	void FixedUpdate() {
                 handleMovement();
                 handleShooting();
 	}
