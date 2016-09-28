@@ -11,6 +11,7 @@ public class BasicCharacter : MonoBehaviour {
 	public float maxJumps = 2;
         bool onLadder = false;
 
+        public GameObject gunPrefab;
         public GameObject bulletPrefab;
         public Transform bulletSpawnLoc;
 
@@ -56,7 +57,11 @@ public class BasicCharacter : MonoBehaviour {
                         bullet.GetComponent<Rigidbody2D>().velocity = bullet.transform.right * 6; //Tweak this line
                         Destroy(bullet, 2.0f); //And this one too
                 }
+        }
 
+        void handleGunPosition() {
+                gunPrefab.transform.position = gameObject.transform.position;
+                bulletSpawnLoc.position = gunPrefab.transform.position;
         }
 
         void handleMovement() {
