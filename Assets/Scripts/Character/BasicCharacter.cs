@@ -53,7 +53,7 @@ public class BasicCharacter : MonoBehaviour {
 
                 if(Input.GetMouseButtonDown(0)) {
                         GameObject bullet = (GameObject) Instantiate(bulletPrefab, bulletSpawnLoc.position, bulletSpawnLoc.rotation);
-                        bullet.GetComponent<RigidBody2D>().velocity = bullet.transform.forward * 6; //Tweak this line
+                        bullet.GetComponent<Rigidbody2D>().velocity = bullet.transform.forward * 6; //Tweak this line
                         Destroy(bullet, 2.0f); //And this one too
                 }
 
