@@ -10,7 +10,7 @@ public class LadderTrigger : MonoBehaviour {
 	
 	}
 
-	void OnTriggerEnter2D(Collider2D other) {
+	void OnTriggerEnter2D(BoxCollider2D other) {
                 Debug.Log("Collided with an object");
                 if (Input.GetKey(KeyCode.W)) {
                         Rigidbody2D otherBody = other.attachedRigidbody;
