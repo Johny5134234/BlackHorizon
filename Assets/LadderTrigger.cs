@@ -11,8 +11,11 @@ public class LadderTrigger : MonoBehaviour {
 	}
 
 	void OnTriggerEnter2D(Collider2D other) {
-                Rigidbody2D otherBody = other.attachedRigidbody;
-		otherBody.AddForce(new Vector2(otherBody.velocity.y, ladderMoveSpeed));
+                Debug.Log("Collided with an object");
+                if (Input.GetKey(KeyCode.W)) {
+                        Rigidbody2D otherBody = other.attachedRigidbody;
+	        	otherBody.velocity = new Vector2(otherBody.velocity.y, ladderMoveSpeed);
+                }
 	}
 
 	// Update is called once per frame
