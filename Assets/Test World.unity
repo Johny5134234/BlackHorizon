@@ -658,6 +658,81 @@ Prefab:
       propertyPath: target
       value: 
       objectReference: {fileID: 1113633865}
+    - target: {fileID: 114000010401884822, guid: 91f2c99cb39d942e9b17bb2d177aefb4,
+        type: 2}
+      propertyPath: saturation
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000010401884822, guid: 91f2c99cb39d942e9b17bb2d177aefb4,
+        type: 2}
+      propertyPath: useDepthCorrection
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000010401884822, guid: 91f2c99cb39d942e9b17bb2d177aefb4,
+        type: 2}
+      propertyPath: mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000010401884822, guid: 91f2c99cb39d942e9b17bb2d177aefb4,
+        type: 2}
+      propertyPath: depthRedChannel.m_Curve.Array.data[1].value
+      value: 0.6750001
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000010401884822, guid: 91f2c99cb39d942e9b17bb2d177aefb4,
+        type: 2}
+      propertyPath: depthRedChannel.m_RotationOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000010401884822, guid: 91f2c99cb39d942e9b17bb2d177aefb4,
+        type: 2}
+      propertyPath: depthRedChannel.m_Curve.Array.data[1].time
+      value: 1.0083333
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000010401884822, guid: 91f2c99cb39d942e9b17bb2d177aefb4,
+        type: 2}
+      propertyPath: redChannel.m_Curve.Array.data[1].value
+      value: 0.8564063
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000010401884822, guid: 91f2c99cb39d942e9b17bb2d177aefb4,
+        type: 2}
+      propertyPath: redChannel.m_RotationOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000010401884822, guid: 91f2c99cb39d942e9b17bb2d177aefb4,
+        type: 2}
+      propertyPath: redChannel.m_Curve.Array.data[1].time
+      value: 0.9792361
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000010401884822, guid: 91f2c99cb39d942e9b17bb2d177aefb4,
+        type: 2}
+      propertyPath: greenChannel.m_Curve.Array.data[1].value
+      value: 0.925
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000010401884822, guid: 91f2c99cb39d942e9b17bb2d177aefb4,
+        type: 2}
+      propertyPath: greenChannel.m_RotationOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000010401884822, guid: 91f2c99cb39d942e9b17bb2d177aefb4,
+        type: 2}
+      propertyPath: greenChannel.m_Curve.Array.data[1].time
+      value: 0.9916667
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000010401884822, guid: 91f2c99cb39d942e9b17bb2d177aefb4,
+        type: 2}
+      propertyPath: blueChannel.m_Curve.Array.data[1].value
+      value: 1.01875
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000010401884822, guid: 91f2c99cb39d942e9b17bb2d177aefb4,
+        type: 2}
+      propertyPath: blueChannel.m_RotationOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000010401884822, guid: 91f2c99cb39d942e9b17bb2d177aefb4,
+        type: 2}
+      propertyPath: blueChannel.m_Curve.Array.data[1].time
+      value: 1.0041667
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 91f2c99cb39d942e9b17bb2d177aefb4, type: 2}
   m_IsPrefabParent: 0
@@ -1873,6 +1948,11 @@ Prefab:
         type: 2}
       propertyPath: m_Interpolate
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000012178721398, guid: 648e0b98c931a43e394553493c66b52a,
+        type: 2}
+      propertyPath: bulletSpeed
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 648e0b98c931a43e394553493c66b52a, type: 2}

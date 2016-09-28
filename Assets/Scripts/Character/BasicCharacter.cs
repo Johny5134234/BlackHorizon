@@ -6,6 +6,7 @@ public class BasicCharacter : MonoBehaviour {
 	public Transform groundCheck;
 	public float groundCheckRadius;
 	public LayerMask groundLayer;
+	public float bulletSpeed;
 
 	float jumpCount = 0;
 	public float maxJumps = 2;
@@ -55,8 +56,7 @@ public class BasicCharacter : MonoBehaviour {
 
                 if(Input.GetMouseButtonDown(0)) {
                         GameObject bullet = (GameObject) Instantiate(bulletPrefab, bulletSpawnLoc.position, bulletSpawnLoc.rotation);
-                        bullet.GetComponent<Rigidbody2D>().velocity = bullet.transform.right * 6; //Tweak this line
-                        Destroy(bullet, 2.0f); //And this one too
+						bullet.GetComponent<Rigidbody2D>().velocity = bullet.transform.right * bulletSpeed; //Tweak this line
                 }
         }
 
