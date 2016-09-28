@@ -19,7 +19,7 @@ public class BasicCharacter : MonoBehaviour {
 	}
 
 	void OnCollisionEnter2D(Collision2D collision) {
-		if(collision.CompareTag("GROUND")) {
+		if(collision.collider.CompareTag("GROUND")) {
 			jumpCount = 0;
 		}
 	}
