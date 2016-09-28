@@ -8,6 +8,9 @@ public class BasicCharacter : MonoBehaviour {
 	public LayerMask groundLayer;
 	public float bulletSpeed;
 
+    int ammo = maxAmmo;
+    public int maxAmmo = 50;
+
 	float jumpCount = 0;
 	public float maxJumps = 2;
         bool onLadder = false;
@@ -44,9 +47,9 @@ public class BasicCharacter : MonoBehaviour {
                 }
         }
 
-	// Update is called once per frame
-	void Update () {
-	}
+        // Update is called once per frame
+	    void Update () {
+    	}
 
         void handleShooting() {
                 Vector3 pos = Camera.main.WorldToScreenPoint(transform.position); 
@@ -54,9 +57,10 @@ public class BasicCharacter : MonoBehaviour {
                 float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
                 
 
-                if(Input.GetMouseButtonDown(0)) {
+                if(Input.GetMouseButtonDown(0) && ammo > 0) {
                         GameObject bullet = (GameObject) Instantiate(bulletPrefab, bulletSpawnLoc.position, bulletSpawnLoc.rotation);
 						bullet.GetComponent<Rigidbody2D>().velocity = bullet.transform.right * bulletSpeed; //Tweak this line
+                        ammo--;
                 }
         }
 
