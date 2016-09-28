@@ -28,14 +28,20 @@ public class BasicCharacter : MonoBehaviour {
 	void Update () {
 		Rigidbody2D characterRigidBody = GetComponent<Rigidbody2D>();
 		if (Input.GetKeyDown (KeyCode.Space) && jumpCount <= maxJumps) {
-			characterRigidBody.AddForce(new Vector2(characterRigidBody.velocity.x, jumpHeight));
+			characterRigidBody.velocity = new Vector2 (characterRigidBody.velocity.x, jumpHeight);
 			jumpCount += 1;
 		}
 		if (Input.GetKey (KeyCode.D)) {
-			characterRigidBody.AddForce(new Vector2(moveSpeed, characterRigidBody.velocity.y));
+			characterRigidBody.velocity = new Vector2 (moveSpeed, characterRigidBody.velocity.y);
 		}
 		if (Input.GetKey (KeyCode.A)) {
-			characterRigidBody.AddForce(new Vector2(-moveSpeed, characterRigidBody.velocity.y));
+			characterRigidBody.velocity = new Vector2 (-moveSpeed, characterRigidBody.velocity.y);
 		}
+<<<<<<< HEAD
+=======
+		if (Input.GetKey(KeyCode.W) && onLadder) {
+			characterRigidBody.velocity = new Vector2(characterRigidBody.velocity.x, moveSpeed);
+		}
+>>>>>>> parent of c7145d8... Added more verbose methods (AddForce())
 	}
 }
