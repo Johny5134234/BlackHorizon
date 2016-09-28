@@ -37,11 +37,5 @@ public class BasicCharacter : MonoBehaviour {
 		if (Input.GetKey (KeyCode.A)) {
 			characterRigidBody.velocity = new Vector2 (-moveSpeed, characterRigidBody.velocity.y);
 		}
-<<<<<<< HEAD
-=======
-		if (Input.GetKey(KeyCode.W) && onLadder) {
-			characterRigidBody.velocity = new Vector2(characterRigidBody.velocity.x, moveSpeed);
-		}
->>>>>>> parent of c7145d8... Added more verbose methods (AddForce())
 	}
 }
