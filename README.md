@@ -1,3 +1,3 @@
-# BlackHorizon
+# Black Horizons
 
-This is a high school game project.
+The most amazing shading for cubes you will ever see
