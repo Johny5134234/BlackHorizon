@@ -9,13 +9,14 @@ public class BasicCharacter : MonoBehaviour {
 
 	float jumpCount = 0;
 	public float maxJumps = 2;
+        bool onLadder = false;
 
 	// Use this for initialization
 	void Start () {
 	}
 
 	void fixedUpdate() {
-
+        
 	}
 
 	void OnCollisionEnter2D(Collision2D collision) {
@@ -23,6 +24,18 @@ public class BasicCharacter : MonoBehaviour {
 			jumpCount = 0;
 		}
 	}
+
+        void OnTriggerEnter2D(Collider2D other) {
+                if(other.CompareTag("LADDER")) {
+                        onLadder = true;
+                }
+        }
+
+        void OnTriggerExit2D(Collider2D other) {
+                if(other.CompareTag("LADDER")) {
+                        onLadder = false;
+                }
+        }
 
 	// Update is called once per frame
 	void Update () {
@@ -37,5 +50,8 @@ public class BasicCharacter : MonoBehaviour {
 		if (Input.GetKey (KeyCode.A)) {
 			characterRigidBody.velocity = new Vector2 (-moveSpeed, characterRigidBody.velocity.y);
 		}
+                if (Input.GetKey (KeyCode.W) && onLadder) {
+                        characterRigidBody.velocity = new Vector2(characterRigidBody.velocity.y, moveSpeed);
+                }
 	}
 }
