@@ -39,10 +39,6 @@ public class BasicCharacter : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-                handleMovement();
-	}
-
-        void handleMovement() {
 		Rigidbody2D characterRigidBody = GetComponent<Rigidbody2D>();
 		if (Input.GetKeyDown (KeyCode.Space) && jumpCount <= maxJumps) {
 			characterRigidBody.velocity = new Vector2 (characterRigidBody.velocity.x, jumpHeight);
@@ -57,5 +53,5 @@ public class BasicCharacter : MonoBehaviour {
                 if (Input.GetKey (KeyCode.W) && onLadder) {
                         characterRigidBody.velocity = new Vector2(characterRigidBody.velocity.x, moveSpeed);
                 }
-        }
+	}
 }
