@@ -12,4 +12,9 @@ public class DestroyMe : MonoBehaviour {
 	void Update () {
 	
 	}
+
+    void OnCollisionEnter2D(Collision2D collision) {
+        //TODO Damage enemy possibly
+        Destroy(gameObject);
+    }
 }
