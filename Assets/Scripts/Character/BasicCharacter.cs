@@ -22,6 +22,7 @@ public class BasicCharacter : MonoBehaviour {
 	void FixedUpdate() {
                 handleMovement();
                 handleShooting();
+				handleGunPosition();
 	}
 
 	void OnCollisionEnter2D(Collision2D collision) {
@@ -50,7 +51,7 @@ public class BasicCharacter : MonoBehaviour {
                 Vector3 pos = Camera.main.WorldToScreenPoint(transform.position); 
                 Vector3 dir = Input.mousePosition - pos;
                 float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
-                bulletSpawnLoc.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+                
 
                 if(Input.GetMouseButtonDown(0)) {
                         GameObject bullet = (GameObject) Instantiate(bulletPrefab, bulletSpawnLoc.position, bulletSpawnLoc.rotation);
@@ -61,23 +62,22 @@ public class BasicCharacter : MonoBehaviour {
 
         void handleGunPosition() {
                 gunPrefab.transform.position = gameObject.transform.position;
-                bulletSpawnLoc.position = gunPrefab.transform.position;
         }
 
         void handleMovement() {
-		Rigidbody2D characterRigidBody = GetComponent<Rigidbody2D>();
-		if (Input.GetKeyDown (KeyCode.Space) && jumpCount <= maxJumps) {
-			characterRigidBody.velocity = new Vector2 (characterRigidBody.velocity.x, jumpHeight);
-			jumpCount += 1;
-		}
-		if (Input.GetKey (KeyCode.D)) {
-			characterRigidBody.velocity = new Vector2 (moveSpeed, characterRigidBody.velocity.y);
-		}
-		if (Input.GetKey (KeyCode.A)) {
-			characterRigidBody.velocity = new Vector2 (-moveSpeed, characterRigidBody.velocity.y);
-		}
-                if (Input.GetKey (KeyCode.W) && onLadder) {
-                        characterRigidBody.velocity = new Vector2(characterRigidBody.velocity.x, moveSpeed);
-                }
+			Rigidbody2D characterRigidBody = GetComponent<Rigidbody2D>();
+			if (Input.GetKeyDown (KeyCode.Space) && jumpCount <= maxJumps) {
+				characterRigidBody.velocity = new Vector2 (characterRigidBody.velocity.x, jumpHeight);
+				jumpCount += 1;
+			}
+			if (Input.GetKey (KeyCode.D)) {
+				characterRigidBody.velocity = new Vector2 (moveSpeed, characterRigidBody.velocity.y);
+			}
+			if (Input.GetKey (KeyCode.A)) {
+				characterRigidBody.velocity = new Vector2 (-moveSpeed, characterRigidBody.velocity.y);
+			}
+            if (Input.GetKey (KeyCode.W) && onLadder) {
+                characterRigidBody.velocity = new Vector2(characterRigidBody.velocity.x, moveSpeed);
+            }
         }
 }
