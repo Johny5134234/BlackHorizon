@@ -45,11 +45,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\GunFire.cs" />
-     <Compile Include="Assets\GunRotation.cs" />
      <Compile Include="Assets\ScreenDrops\_Demo\Standard Assets\Character Controllers\Sources\Scripts\MouseLook.cs" />
      <Compile Include="Assets\ScreenDrops\_Scripts\ScreenDrops.cs" />
      <Compile Include="Assets\Scripts\Character\BasicCharacter.cs" />
+     <Compile Include="Assets\Scripts\Guns\GunFire.cs" />
+     <Compile Include="Assets\Scripts\Guns\GunRotation.cs" />
      <Compile Include="Assets\Scripts\Misc\CameraFollow.cs" />
      <None Include="Assets\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlendOneOne.shader" />
