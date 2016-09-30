@@ -8,7 +8,7 @@ public class BasicCharacter : MonoBehaviour {
 	public LayerMask groundLayer;
 	public float bulletSpeed;
 
-    int ammo = 0;
+    public int ammo = 50;
     public int maxAmmo = 50;
 
 	float jumpCount = 0;
@@ -58,12 +58,18 @@ public class BasicCharacter : MonoBehaviour {
                 float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
                 
 
-                if(Input.GetMouseButtonDown(0) && ammo > 0) {
-                        GameObject bullet = (GameObject) Instantiate(bulletPrefab, bulletSpawnLoc.position, bulletSpawnLoc.rotation);
-						bullet.GetComponent<Rigidbody2D>().velocity = bullet.transform.right * bulletSpeed; //Tweak this line
-                        ammo--;
-                }
-        }
+        if(Input.GetMouseButtonDown(0)) {
+				if (ammo > 0) {
+					GameObject bullet = (GameObject)Instantiate (bulletPrefab, bulletSpawnLoc.position, bulletSpawnLoc.rotation);
+					bullet.GetComponent<Rigidbody2D> ().velocity = bullet.transform.right * bulletSpeed; //Tweak this line
+					ammo--;
+					Destroy (bullet, 2.0f); //And this one too
+				} else {
+					ammo = 50;
+				}
+			}
+
+	}
 
         void handleGunPosition() {
                 gunPrefab.transform.position = gameObject.transform.position;
@@ -85,4 +91,5 @@ public class BasicCharacter : MonoBehaviour {
                 characterRigidBody.velocity = new Vector2(characterRigidBody.velocity.x, moveSpeed);
             }
         }
-}
+	}
+
