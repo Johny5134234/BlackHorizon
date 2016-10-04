@@ -48,6 +48,7 @@
      <Compile Include="Assets\DestroyMe.cs" />
      <Compile Include="Assets\ScreenDrops\_Demo\Standard Assets\Character Controllers\Sources\Scripts\MouseLook.cs" />
      <Compile Include="Assets\ScreenDrops\_Scripts\ScreenDrops.cs" />
+     <Compile Include="Assets\Scripts\AI\DamageMe.cs" />
      <Compile Include="Assets\Scripts\Character\BasicCharacter.cs" />
      <Compile Include="Assets\Scripts\Guns\GunFire.cs" />
      <Compile Include="Assets\Scripts\Guns\GunRotation.cs" />

@@ -2167,6 +2167,16 @@ Prefab:
       propertyPath: bulletSpeed
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 50000012906374242, guid: 648e0b98c931a43e394553493c66b52a,
+        type: 2}
+      propertyPath: m_AngularDrag
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 50000012906374242, guid: 648e0b98c931a43e394553493c66b52a,
+        type: 2}
+      propertyPath: m_LinearDrag
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 648e0b98c931a43e394553493c66b52a, type: 2}
   m_IsPrefabParent: 0
@@ -3964,6 +3974,7 @@ Prefab:
     - {fileID: 65000011871874122, guid: 5092e8496ef9c4ab9b16530b6e2e600c, type: 2}
     - {fileID: 65000013927438944, guid: 5092e8496ef9c4ab9b16530b6e2e600c, type: 2}
     - {fileID: 65000013723926876, guid: 5092e8496ef9c4ab9b16530b6e2e600c, type: 2}
+    - {fileID: 114000010012798294, guid: 5092e8496ef9c4ab9b16530b6e2e600c, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 5092e8496ef9c4ab9b16530b6e2e600c, type: 2}
   m_IsPrefabParent: 0
 --- !u!4 &1517308522 stripped
