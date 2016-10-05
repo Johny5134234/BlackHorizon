@@ -13,8 +13,8 @@ public class DestroyMe : MonoBehaviour {
 	
 	}
 
-    void OnCollisionEnter2D(Collision2D collision) {
-        //TODO Damage enemy possibly
-        Destroy(gameObject);
+	void OnCollisionEnter2D(Collision2D collision) {
+	     //TODO Damage enemy possibly
+	     Destroy(gameObject, 0.2f);
     }
 }
